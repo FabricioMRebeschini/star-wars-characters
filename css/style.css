@@ -1,0 +1,261 @@
+@import url('https://fonts.cdnfonts.com/css/star-wars');
+/* font-family: 'Star Wars', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Star Wars', sans-serif;
+}
+
+
+body{
+    background-image: url('../img/universo-bg.jpg');
+    background-size: cover;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1400px;
+    height: 70px;
+    padding: 50px 2%;
+}
+
+a{
+    text-decoration: none;
+}
+
+div.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 250px;
+}
+
+
+img.logo-img{
+    width: 40%;
+    height: auto;
+
+}
+
+span.logo-text{
+    color: white;
+    width: 60%;
+    font-size: 1rem;
+}
+span.logo-text:hover{
+    color: rgba(181, 181, 168, 0.532);
+    transition: .3s;
+}
+.social-media {
+    display: flex;
+    width: 130px;
+    justify-content: space-around;
+}
+
+header i {
+    color: white;
+    font-size: 1.4rem;
+    
+}
+
+header i:hover{
+    color: rgba(181, 181, 168, 0.532);
+    transition: .3s;
+}
+
+.main-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 0;
+}
+
+h2{
+    margin-bottom: 20px;
+    color: gold;
+    font-size:1.5rem;
+    text-align: center;
+}
+
+.main-content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /*quebrar pra baixo */
+    column-gap: 20px;/*espaçamento vertical*/
+    row-gap: 20px;/*espaçamento horizontal*/
+    padding: 0 20px;
+}
+
+.cards{
+    width: 230px;
+    height:470px;
+    background-position: 50% 50%;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 5px;
+}
+
+.cards:hover{
+    transform: scale(1.02);/*aumenta o tamanho*/
+}
+
+.character-name-bg{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.681);
+    color: #e1b100;
+    border-radius: 10px;
+}
+
+
+.buttons{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button{
+    width: 90px;
+    height: 25px;
+    background-color: gold;
+    color: #000;
+    border-radius: 3px;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid black;
+    transition: .3s;
+}
+
+button:hover{
+    background-color: #000;
+    color: gold;
+}
+
+#back-button{
+    visibility: hidden;/*vai ficar invisível*/
+}
+
+footer{
+    width: 100%;
+    margin: 40px 0 20px 0;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.footer-logo{
+    font-family: 'Star Wars',sans-serif;
+    color: wheat;
+    font-size: 1rem;
+}
+.copyrigth{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: wheat;
+    font-size: 1rem;
+}
+
+.modal{
+    visibility:hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+}
+
+.modal-content{
+    width: 25vw;
+    height: 70vh;
+    background-color: #0d0d0d;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    padding: 30px 10px;
+    align-items: center;
+}
+
+.character-image{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: 50% 10%;
+}
+
+.character-details{
+    font-size: 1rem;
+    font-weight: lighter;
+    color: #e1b100;
+}
+
+
+@media screen and (max-width: 1000px){
+    
+.modal-content{
+    width: 50%;
+    height: 50vh;
+    background-color: #0d0d0d;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    padding: 30px 10px;
+    align-items: center;
+}
+
+.character-image{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: 50% 10%;
+}
+}
+
+@media screen and (max-width: 458px){
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40px;
+    padding: 70px 2%;
+}
+div.logo{
+    max-width: 300px;
+    padding: 0 4%;
+} 
+h2{
+        margin-bottom: 20px;
+        color: gold;
+        font-size:1rem;
+}
+}
+
+
+
+
+
+
+

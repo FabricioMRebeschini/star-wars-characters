@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars Characters | Fabrício Rebeschini</title>
+    <link rel="shortcut icon" href="img/millennium-falcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+
+        <a href="index.html">
+            <div class="logo">
+                <img class="logo-img" src="img/star-wars-logo.png" alt="logo">
+                <span class="logo-text">Characters</span>
+                <audio>
+                    <source src="sound/lightsaber.mp3">
+                </audio>
+            </div><!--logo-->
+        </a>
+
+        <div class="social-media">
+            <a href="https://www.facebook.com/fabricio.marquesrebeschini.5/?locale=pt_BR" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+
+            <a href="https://github.com/FabricioMRebeschini" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/fabricio-marques-328653291/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </div><!--social-media-->
+
+    </header>
+
+    <div class="main-container">
+
+        <h2>Conheca todos os personagens de star Wars</h2>
+
+        <div class="main-content" id="main-content"></div><!--main-content-->
+
+        <div class="modal" id="modal" onclick="hideModal()">
+            <div class="modal-content" id="modal-content"></div>
+        </div>
+
+        <div class="buttons">
+            <button id="back-button" disabled>Anterior</button>
+            <button id="next-button" disabled>Proxima</button>
+        </div><!--buttons-->
+
+    </div><!--main-container-->
+
+    <footer>
+        <p class="footer-logo">Star Wars Characters</p>
+        <p class="copyrigth">Desenvolvido por &copy; Fabrício Marques Rebeschini</p>
+    </footer>
+    
+
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/38f6152584.js" crossorigin="anonymous"></script>
+</body>
+</html>
